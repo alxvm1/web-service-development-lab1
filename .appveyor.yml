@@ -10,12 +10,9 @@ install:
       }
   - pip3 install flask
   - pip3 install gunicorn
-
 before_install:
   - chmod +x ./flaskapp/st.sh
-
 build: off  # Отключаем сборку, так как это не требуется для Python
-
 test_script:
   - cd flaskapp
   - ./st.sh
